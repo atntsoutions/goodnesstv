@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'utils/singleton.dart';
 import 'router.dart';
 
-// main app
+// main app server
 void main() {
   runApp(
     MyApp(
