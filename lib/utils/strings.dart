@@ -1,6 +1,9 @@
 const DEFAULT_ROUTE = "/";
 const RADIO_ROUTE = "/radio";
+
 const TV_ROUTE = "/tv";
+const BTV_ROUTE = "/btv";
+
 const YOUTUBE_ROUTE = "/youtube";
 const CONTACT_ROUTE = "/contact";
 const ABOUTUS_ROUTE = "/aboutus";

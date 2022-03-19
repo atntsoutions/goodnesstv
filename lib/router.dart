@@ -6,6 +6,7 @@ import 'package:goodnessapp/drawer/feedback.dart';
 import 'package:goodnessapp/drawer/platformservice.dart';
 import 'package:goodnessapp/drawer/prayer.dart';
 import 'package:goodnessapp/drawer/satelite.dart';
+import 'package:goodnessapp/screens/btvplayer.dart';
 import 'package:goodnessapp/screens/tvplayer.dart';
 import 'package:goodnessapp/screens/youtube.dart';
 import 'package:goodnessapp/players/youtube_player.dart';
@@ -21,8 +22,6 @@ class AppRouter {
     print(settings.name);
     switch (settings.name) {
       case DEFAULT_ROUTE:
-        print('Default Route');
-
         return MaterialPageRoute(builder: (_) => HomePage());
       case ABOUTUS_ROUTE:
         return MaterialPageRoute(builder: (_) => AboutusPage());
@@ -36,13 +35,18 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => PrayerPage());
       case FEEDBACK_ROUTE:
         return MaterialPageRoute(builder: (_) => FeedBackPage());
-      case TV_ROUTE:
+      case BTV_ROUTE:
         String args = settings.arguments.toString();
         return MaterialPageRoute(
             builder: (_) => TvPlayerPage(
                   url: args,
                 ));
-
+      case TV_ROUTE:
+        String args = settings.arguments.toString();
+        return MaterialPageRoute(
+            builder: (_) => BTvPlayerPage(
+                  url: args,
+                ));
       case RADIO_ROUTE:
         String args = settings.arguments.toString();
         return MaterialPageRoute(
